@@ -143,7 +143,7 @@ class WxNotify extends Service {
             if(!users) return ctx.fail({fail: '获取关注用户失败，可能频繁操作出现了限制，请调用clearQuota接口清除'})
             const data = {
                 date: {
-                    value: curWeek,
+                    value:`${curStand}${curWeek}`
                     color: randomHexColor()
                 },
                 city: {
