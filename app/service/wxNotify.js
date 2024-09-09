@@ -181,6 +181,10 @@ class WxNotify extends Service {
                 caihongpi: {
                     value: chp ? chp : '',
                     color: randomHexColor()
+                },
+           course: {
+                    value: '课表等待导入中',
+                    color: randomHexColor()
                 }
             }
             for(let i = 0, j = users.length; i < j; i++) {
